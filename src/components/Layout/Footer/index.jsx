@@ -5,30 +5,34 @@ import { copyright } from "../../../../blog-config"
 
 const FooterWrapper = styled.footer`
   margin-top: 32px;
-  padding: 40px 30px;
+  padding: 40px 15px;
   border-top: 1px solid ${props => props.theme.colors.divider};
   text-align: center;
   font-size: 11pt;
   font-weight: lighter;
-  color: ${props => props.theme.colors.secondaryText};
+    max-width: 680px;
+    margin: 0 auto;
+
+    color: ${props => props.theme.colors.secondaryText};
     & > div#copyright {
-        //font-weight: bold;
+        float:left;
     }
     & > div#themeby {
-        margin-bottom: 15px;
+        // margin-bottom: 15px;
+        float:right;
     }
-    
+
 `
+
 
 const Footer = () => {
   return (
     <FooterWrapper>
-      <div id={"themeby"}>
-        Theme by <a href="https://github.com/rundevelrun/gatsby-starter-rundevelrun" target="blank">
-        gatsby-starter-rundevelrun
-      </a></div>
-      <div id={"copyright"} dangerouslySetInnerHTML={{ __html: copyright }}></div>
-
+        <div id={"themeby"}>
+          Theme by <a href="https://github.com/rundevelrun/gatsby-starter-rundevelrun" target="blank">
+          RUN:DEVEL:RUN
+        </a></div>
+        <div id={"copyright"} dangerouslySetInnerHTML={{ __html: copyright }}></div>
     </FooterWrapper>
   )
 }

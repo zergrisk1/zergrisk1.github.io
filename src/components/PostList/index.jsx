@@ -38,6 +38,11 @@ const Excerpt = styled.p`
   word-break: break-all;
 `
 
+const EmojiWrapper = styled.div`
+  float:left;
+  margin-right: 15px;  
+`
+
 const checkIsScrollAtBottom = () => {
   return (
     document.documentElement.scrollHeight -
@@ -70,14 +75,16 @@ const PostList = ({ postList }) => {
   return (
     <PostListWrapper>
       {postList.slice(0, postCount).map((post, i) => {
-        const { title, date, tags } = post.frontmatter
+        const { title, date, tags, emoji } = post.frontmatter
         const { excerpt } = post
         const { slug } = post.fields
-
         return (
           <React.Fragment key={JSON.stringify({ slug, date })}>
             <PostWrapper>
               <Title size="bg">
+                {emoji ??
+                  <EmojiWrapper>{emoji}</EmojiWrapper>
+                }
                 <Link to={slug}>{title}</Link>
               </Title>
               <Date>{date}</Date>

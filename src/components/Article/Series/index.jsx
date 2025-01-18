@@ -9,6 +9,7 @@ const SeriesWrapper = styled.div`
   margin-bottom: 32px;
   padding: 16px;
   background-color: ${props => props.theme.colors.seriesBackground};
+    border-radius: 6px;
 `
 
 const SeriesHeader = styled.h2`
@@ -74,6 +75,14 @@ const ViewMore = styled.div`
     color: ${props => props.theme.colors.text};
   }
 `
+const Subtitle = styled.h3`
+  display: inline-block;
+  padding: 2px 3px;
+  font-weight: bold;
+  background-color: ${props => props.theme.colors.text};
+  color: ${props => props.theme.colors.bodyBackground};
+  letter-spacing: -1px;
+`
 
 const Series = ({ header, series }) => {
   const [fold, setFold] = useState(true)
@@ -99,7 +108,7 @@ const Series = ({ header, series }) => {
     <SeriesWrapper>
       <SeriesHeader>
         <Link to={`/series/${_.replace(header, /\s/g, "-")}`}>
-          {header}
+          <Subtitle>SERIES</Subtitle>{" " + header}
         </Link>{" "}
         <span>({series.length})</span>
       </SeriesHeader>

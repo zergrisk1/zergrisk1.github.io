@@ -11,6 +11,7 @@ import VerticalSpace from "components/VerticalSpace"
 
 import { title, description, siteUrl } from "../../blog-config"
 import Divider from "../components/Divider"
+import Bio from "../components/Bio"
 
 const SearchWrapper = styled.div`
   margin-top: 20px;
@@ -40,7 +41,9 @@ const Search = ({ data }) => {
   return (
     <Layout>
       <SEO title={title} description={description} url={siteUrl} />
-      <VerticalSpace size={10} />
+      <VerticalSpace size={30} />
+      <Bio/>
+      <VerticalSpace size={30} />
       <SearchWrapper>
         <Badge badgeContent={filteredPosts.length} color="warning" max={99} showZero={true}
         sx={{top:'5px', left: '2px'}}>
@@ -73,6 +76,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           tags
+          emoji
         }
         rawMarkdownBody
       }

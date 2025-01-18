@@ -32,10 +32,17 @@ const Date = styled.span`
   color: ${props => props.theme.colors.secondaryText};
 `
 
-const Header = ({ title, date, tags, minToRead }) => {
+const EmojiWrapper = styled.div`
+  float:left;
+  margin-right: 10px;  
+`
+
+const Header = ({ title, date, tags, minToRead, emoji}) => {
   return (
     <Wrapper>
-      <ArticleTitle> {title} </ArticleTitle>
+      <ArticleTitle>{emoji ??
+        <EmojiWrapper>{emoji}</EmojiWrapper>
+      }{title} </ArticleTitle>
       <Information>
         <Date>· {date} </Date>
         <Date>· {minToRead} min read </Date>

@@ -1,13 +1,38 @@
 ---
-title: "🚀 2. 빠르게 시작하기"
-description:
-date: 2021-04-02 11:22:22
-update: 2021-04-02 11:22:22
+emoji: "🖐️"
+title: "1. 개요"
+date: 2025-01-18 11:41:00
+update: 2025-01-18 11:41:00
 tags:
-  - hoodie
-  - quick-start
-series: "gatsby-starter-hoodie 로 블로그 시작하기"
+  - rundevelrun
+  - intruduce
+series: "Gatsby 블로그 시작하기"
 ---
+
+## 'gatsby-starter-rundevelrun'의 시작
+
+Gatsby를 사용하기 전에는 Jetbrains의 [Writerside↗️](https://www.jetbrains.com/help/writerside/discover-writerside.html)를 이용해서 개인 블로그를 운영하면서 디자인적인 요소들은 상당히 만족스러웠지만 
+Writerside는 문서 도구이기 때문에 블로그 운영에는 적합하지 않은 부분이 많이 있었습니다. (RSS Feed 미지원, 사용자화의 어려움, GraphQL 미지원 등)
+
+그러던 중 정말 감사하게도 아주 깔끔하게 제작된 소스를 Github에 공개해주신 [devHudi↗️](https://github.com/devHudi/gatsby-starter-hoodie)님 덕분에 Gatsby에 입문할 수 있었고, 제가 필요한 부분을 일부 수정하고 제거하는 과정을 거쳤지만 대부분의 소스는 devHudi님의 원본소스를 바탕으로 제작되었습니다.
+
+깊은 감사의 말씀을 전해드립니다.
+
+## Demo
+
+[https://6developer.com](https://6developer.com)
+
+## 주요 기능
+
+- 마크다운
+- 코드 하이라이팅
+- Katex 문법
+- 다크모드 (OS 환경설정과 연동)
+- 태그 분류
+- 시리즈 분류
+- 반응형 웹
+- SEO
+- Giscus
 
 아래 단계를 따라서 여러분의 블로그를 시작하세요. 굉장히 쉬워요 😉.
 
@@ -70,17 +95,15 @@ module.exports = {
 
 gatsby-starter-hoodie 는 `blog-config.js` 라는 설정 파일을 제공합니다. 이 파일에서 블로그 정보, 작성자 프로필, Giscus 설정 등을 작성할 수 있습니다. 여러분 블로그 설정에 맞게 `blog-config.js` 를 설정하세요.
 
-### 프로필 이미지 변경
-
-`static/profile.png` 에 위치한 이미지 파일을 원하는 이미지 파일로 교체하세요. 만약 파일명을 변경하고 싶다면, `src/components/Bio.jsx` 의 소스코드를 수정해야합니다.
-
 ## 5. 포스트 추가
 
-마크다운 포스트는 `contents/posts` 경로에 위치해있습니다. 해당 경로에서 글을 작성할 수 있습니다. [여기를 클릭하여](https://devHudi.github.io/gatsby-starter-hoodie/writing-guide) 더 자세한 글 작성 방법을 확인하세요.
+마크다운 포스트는 `contents/posts` 경로에 위치해있습니다. 해당 경로에서 글을 작성할 수 있습니다. [여기를 클릭하여](https://hoodie.gatsbyjs.io/gatsby-starter-hoodie/writing-guide) 더 자세한 글 작성 방법을 확인하세요.
 
 ## 6. 블로그 배포하기
 
 ### 6-1 Netlify 를 통해
+
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/alxshelepenok/gatsby-starter-lumen" target="_blank"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
 
 [A Step-by-Step Guide: Gatsby on Netlify](https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/) 문서를 참조하여, Netlify 를 Github 레포지토리와 연결할 수 있습니다. 이 과정은 어렵지 않습니다.
 
@@ -142,3 +165,7 @@ $ npm run build
     ├── templates // post components are here
     └── utils
 ```
+
+## Star History 🌟
+
+[![Star History Chart](https://api.star-history.com/svg?repos=devHudi/gatsby-starter-hoodie&type=Date)](https://star-history.com/#devHudi/gatsby-starter-hoodie&Date)

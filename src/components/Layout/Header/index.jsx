@@ -111,6 +111,11 @@ const Header = ({ toggleTheme }) => {
   const [scrollY, setScrollY] = useState()
   const [hidden, setHidden] = useState(false)
 
+
+  const checkValue = (value) => {
+    return value === null || value === "" || value === undefined;
+  };
+
   const detectScrollDirection = () => {
     if (scrollY >= window.scrollY) {
       // scroll up
@@ -134,19 +139,33 @@ const Header = ({ toggleTheme }) => {
   useEffect(() => {
     setScrollY(window.scrollY)
   }, [])
+  const [showFirstDiv, setShowFirstDiv] = useState(true);
+
+  useEffect(() => {
+    if(!checkValue(headerSubTitle)){
+      const interval = setInterval(() => {
+        setShowFirstDiv(prev => !prev);
+      }, 5000);
+
+    return () => clearInterval(interval);
+    }
+  }, []);
 
   return (
     <HeaderWrapper isHidden={hidden}>
       <Inner>
         <BlogTitle>
           <Link to="/">
+            {showFirstDiv ? (
             <div dangerouslySetInnerHTML={{ __html: headerTitle }}></div>
-            <div style={{fontSize:'12px', textAlign:'center'}}>{headerSubTitle}</div>
+              ) : (
+            <div dangerouslySetInnerHTML={{ __html: headerSubTitle }}></div>
+              )}
           </Link>
         </BlogTitle>
         <Menu>
           <ToggleWrapper>
-          <IconRail theme={theme.name}>
+            <IconRail theme={theme.name}>
               <FaSun onClick={toggleTheme} />
               <FaMoon onClick={toggleTheme} />
             </IconRail>

@@ -11,7 +11,7 @@ const Post = ({ data }) => {
   const post = data.markdownRemark
   const { previous, next, seriesList } = data
 
-  const { title, date, update, tags, series } = post.frontmatter
+  const { title, date, update, tags, series, emoji } = post.frontmatter
   const { excerpt } = post
   const { readingTime, slug } = post.fields
 
@@ -37,6 +37,7 @@ const Post = ({ data }) => {
       <SEO title={title} description={excerpt} url={`${siteUrl}${slug}`} />
       <Article>
         <Article.Header
+          emoji={emoji}
           title={title}
           date={date}
           update={update}
@@ -77,6 +78,7 @@ export const pageQuery = graphql`
         update(formatString: "MMMM DD, YYYY")
         tags
         series
+        emoji
       }
       fields {
         slug
@@ -97,6 +99,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            emoji
           }
         }
       }
@@ -115,6 +118,7 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
+        emoji
       }
     }
   }

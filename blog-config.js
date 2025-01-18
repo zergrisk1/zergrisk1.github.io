@@ -1,9 +1,9 @@
 module.exports = {
-  title: "YOUR:BLOG:NAME",
+  title: "YOURBLOGNAME",
   headerTitle: "YOUR:<em style='color:#ed6c02'>BLOG</em>:NAME",
-  headerSubTitle: "",
+  // headerSubTitle: "<em style='color:#ed6c02'>YOUR</em>:BLOG:<em style='color:#ed6c02'>NAME</em>",
   copyright: "©YOUR:BLOG:NAME",
-  author: "rundevelrun",
+  author: "YOUR:NAME",
   siteUrl: "https://6developer.com/",
   description: "Hi, Nice to meet you !",
   links: {
