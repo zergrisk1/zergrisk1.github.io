@@ -1,171 +1,124 @@
 <h1 align="center">
-    gatsby-starter-hoodie
+  👋
 </h1>
+<h1 align="center">
+  gatsby-starter-rundevelrun
+</h1> 
 
-<h4 align="center">
-  A gatsby starter developed for developers to build tech blogs.
-</h4>
+> ⚠️ Since a translator was used, there may be inaccuracies.
 
-![](mockup.png)
+> [한국어로 보기](https://github.com/rundevelrun/gatsby-starter-rundevelrun/blob/develop/README-kr.md)
 
-> gatsby-starter-hoodie has been migrated to **Gatsby 5** as of 2023-06-30. gatsby-starter-hoodie is now available for **node.js 20**.
 
-## 🚀 About gatsby-starter-hoodie
+## 🎬 Introduction
 
-[한국어 문서 바로가기](https://github.com/devHudi/gatsby-starter-hoodie/blob/main/README-kr.md)
+Before using Gatsby, I managed a personal blog with Jetbrains' [Writerside↗](https://www.jetbrains.com/help/writerside/discover-writerside.html). While I was quite satisfied with the design elements, the tool, being primarily intended for document purposes, had many shortcomings for blog management (such as lack of RSS Feed support, difficulty in customization, and no GraphQL support).
 
-gatsby-starter-hoodie is a gatsby starter created for writing tech blogs. Markdown, Code Highlighting in various programming languages, and Katex syntax are supported. Also, you can easily categorize articles into tags and series.
+Fortunately, I was able to get started with Gatsby thanks to [devHudi↗](https://github.com/devHudi/gatsby-starter-hoodie), who generously shared a very well-crafted source on GitHub. Although I made some modifications to suit my needs, most of the source was created based on the original.
 
-Start your blog with a neatly designed gatsby-starter-hoodie that supports dark mode.
+I extend my deep gratitude.
 
-This project inspired by [velog](https://velog.io).
+## ▶️️ Live Demo
 
-## [Live Demo](https://gatsby-starter-hoodie.netlify.app)
+> [https://6developer.com](https://6developer.com)
 
-## Features
+## ✅ Key Features
 
-- Markdown
-- Code Highlighting
-- Katex Syntax
-- Dark Mode (Responsive to the settings of the OS)
-- Tag Categoriazation
-- Series Categorization
-- Responsive Web
-- SEO
-- Giscus
+The key features are derived from the contributions of [devHudi↗](https://github.com/devHudi/gatsby-starter-hoodie):
+> - Markdown
+> - Code highlighting
+> - Katex syntax
+> - Dark mode (integrated with OS settings)
+> - Tag classification
+> - Series classification
+> - Responsive web design
+> - SEO
+> - Giscus
 
-Getting started your blog with gatsby-starter-hoodie by following steps below. It's very easy 😉.
+## ✍️ Modified Content
 
-## 1. Create a Gatsby site
+### 2025.01.19
+1. In addition to the title used for SEO, headerTitle and headerSubTitle have been added.
+    - headerTitle and headerSubTitle support HTML tags.
+    - If headerSubTitle is present, the Title area changes every 5 seconds.
+2. Added 'emoji' to the Frontmatter
+    - This is to ensure that only titles without emojis are displayed in the SEO Title.
+3. SEO modifications
+    - The blog title has been added after the post title. <br/> e.g. 'Overview | YOUR:BLOG:NAME'
+    - On the '/' page, only the blog title is displayed. <br/> e.g. 'YOUR:BLOG:NAME'
+4. A search function has been added to the '/' page.
+5. The number of posts found is displayed as a Badge on the '/' and '/search' pages.
+6. The title and copyright have been separated.
+7. Some UI elements have been changed.
 
-> Make sure you have **node.js** and **gatsby-cli** installed on your computer.
 
+## 🧪 Test Environment
+> NodeJS v22.13.0 <br/>
+> yarn 1.22.22
+
+## 🛠️ Environment Setup
+1. Install [NodeJS↗](https://nodejs.org/en/download)
+2. Install yarn
+```shell
+npm install -g yarn
 ```
-$ npx gatsby new my-hoodie-blog https://github.com/devHudi/gatsby-starter-hoodie
+3. Install gatsby-cli
+```shell
+yarn global add gatsby-cli
+```
+4. Create a Gatsby blog
+```shell
+gatsby new your-blog-name https://github.com/rundevelrun/gatsby-starter-rundevelrun.git
 ```
 
-## 2. Start dev server
-
+## 🚀 Running Development Environment
+After completing the steps below, access `http://localhost:8000`
+1. Install dependency packages
+```shell
+cd your-blog-name
+yarn install
 ```
-$ cd my-hoodie-blog
-$ npm run start
-```
-
-Now you can access to your blog at localhost:8000.
-
-## 3. Create your own Github repository
-
-Giscus comment widget is based on **Github Discuss system**. So you need your own GitHub repository. Also, if you want to publish your blog through Github Pages or Netlify, the Github Repository is a necessary.
-
-If you don't know how to create a GitHub repository, follow the [official GitHub documentation](https://docs.github.com/en/github/getting-started-with-github/create-a-repo).
-
-### Add remote repository
-
-```
-git remote add origin https://github.com/{YOUR_GITHUB_NAME}/{YOUR_REPOSITORY_NAME}
+2. Start
+```shell
+yarn develop
 ```
 
-## 4. Write blog-config.js
+## ☺️ Customization
+Edit the contents of `blog-config.js`
 
 ```javascript
 module.exports = {
-  title: "MY BLOG",
-  description: "Hello, This is my blog",
-  author: "YOUR NAME",
-  siteUrl: "https://myblog.com",
-  links: {
-    github: "https://github.com",
-    facebook: "https://www.facebook.com",
-    instagram: "https://www.instagram.com",
-    etc: "https://www.google.com/",
-  },
-  giscus: {
-    repo: "{YOUR_GITHUB_NAME}/{YOUR_REPOSITORY_NAME}",
-    repoId: "{YOUR_GITHUB_REPOSITORY_ID}",
-    category: "{YOUR_GITHUB_REPOSITORY_CATEGORY}",
-    categoryId: "{YOUR_GITHUB_REPOSITORY_CATEGORY_ID}",
-    mapping: "pathname",
-    strict: "0",
-    reactionsEnabled: "1",
-    inputPosition: "bottom",
-    lang: "en",
-  },
+   title: "YOUR:BLOG:NAME",    // SEO Blog title
+   headerTitle: "YOUR:<em style='color:#ed6c02'>BLOG</em>:NAME", // Logo 1
+   headerSubTitle: "<em style='color:#ed6c02'>YOUR</em>:BLOG:<em style='color:#ed6c02'>NAME</em>", // Logo 2
+   copyright: "©YOUR:BLOG:NAME", // copyright in footer
+   author: "YOUR:NAME",  // Your Name
+   siteUrl: "https://6developer.com/", // Your Site URL
+   description: "Hi, Nice to meet you !",  // Blog description
+   links: {
+      github: "https://github.com/rundevelrun",
+      ...
+   },
+   giscus: {
+      ...
+   },
 }
 ```
 
-gatsby-starter-hoodie provides a configuration file called `blog-config.js`. In this file, you can configure blog, biography (profile), and giscus. Configure `blog-config.js` to suit your blog.
-
-## 5. Add your content
-
-Markdown content is in `contents/posts`. You can write and add your articles. [Click here](https://hoodie.gatsbyjs.io/gatsby-starter-hoodie/writing-guide) to see the detail writing guide.
-
-## 6. Deploy your blog
-
-### 6-1 via Netlify
-
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/alxshelepenok/gatsby-starter-lumen" target="_blank"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
-
-Follow the Connecting to Netlify steps in [A Step-by-Step Guide: Gatsby on Netlify](https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/). It's not difficult.
-
-If you connect the github repository using Netlify, it is automatically distributed whenever you push it, so it is convenient.
-
-### 6-2. via Github Pages
-
-#### Case 1
-
-If the repository name is in the form of `{YOUR_GITHUB_NAME} .github.io`, run it below.
-
-```
-$ npm run deploy-gh
-```
-
-#### Case 2
-
-If the repository name is not in the form of `{YOUR_GITHUB_NAME} .github.io`, run it below.
-
-```
-$ npm run deploy-gh-prefix-paths
-```
-
-In the above case, you need to change `pathPrefix` in `gatsby-config.js` to your repository name.
-
-### 6-3. other platforms
-
-```
-$ npm run build
-```
-
-You can build the gatsby website with the command above. The build output is created in the `/public` directory. Deploy the `/public` directory using the command for the platform you want to deploy.
-
-## 7. Cutomize
-
-### Project Structure
-
-You can customize your own gatsby-starter-hoodie by referring to the following file structure 🙊.
-
-```
-├── node_modules
-├── contents
-│   └── posts // your articles are here
-├── public // build outputs are here
-└── src
-    ├── assets
-    │   └── theme // theme config is here
-    ├── components
-    │   └── Article
-    │       └── Body
-    │           └── StyledMarkdown
-    │               └── index.jsx // markdown styles are here
-    │   ...
-    ├── fonts // webfonts are here
-    ├── hooks
-    ├── images
-    ├── pages // page components are here
-    ├── reducers
-    ├── templates // post components are here
-    └── utils
-```
-
-## Star History 🌟
-
-[![Star History Chart](https://api.star-history.com/svg?repos=devHudi/gatsby-starter-hoodie&type=Date)](https://star-history.com/#devHudi/gatsby-starter-hoodie&Date)
+## 📝 Writing Posts
+1. Create a post file in the `contents/posts` folder (two methods)
+    1. Create a folder with the name to be used as the pathname and create an 'index.md' inside it
+    2. Create a `*.md` file with the name to be used as the pathname
+2. Write frontmatter
+   ```yaml
+   ---
+   emoji: "🚀"
+   title: "2. How do we get started?"
+   date: 2025-01-19 13:53:00
+   update: 2025-01-19 13:53:00
+   tags:
+      - rundevelrun
+      - howto
+   series: "Starting a Gatsby Blog"
+   ---
+   ```
