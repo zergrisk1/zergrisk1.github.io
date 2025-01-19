@@ -82,8 +82,9 @@ const PostList = ({ postList }) => {
           <React.Fragment key={JSON.stringify({ slug, date })}>
             <PostWrapper>
               <Title size="bg">
-                {emoji ??
+                {emoji ? (
                   <EmojiWrapper>{emoji}</EmojiWrapper>
+                ) : ''
                 }
                 <Link to={slug}>{title}</Link>
               </Title>

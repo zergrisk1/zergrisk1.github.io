@@ -40,8 +40,9 @@ const EmojiWrapper = styled.div`
 const Header = ({ title, date, tags, minToRead, emoji}) => {
   return (
     <Wrapper>
-      <ArticleTitle>{emoji ??
-        <EmojiWrapper>{emoji}</EmojiWrapper>
+      <ArticleTitle>{emoji ? (
+          <EmojiWrapper>{emoji}</EmojiWrapper>
+        ) : ''
       }{title} </ArticleTitle>
       <Information>
         <Date>· {date} </Date>
