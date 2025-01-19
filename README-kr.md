@@ -8,6 +8,8 @@
 
 ## 🎬 시작
 
+<img src="screen.png"/>
+
 Gatsby를 사용하기 전에는 Jetbrains의 [Writerside↗](https://www.jetbrains.com/help/writerside/discover-writerside.html)를 이용해서 개인 블로그를 운영하면서 디자인적인 요소들은 상당히 만족스러웠지만
 문서의 목적으로 만들어진 도구이기 때문에 블로그 운영에는 적합하지 않은 부분이 많이 있었습니다. (RSS Feed 미지원, 사용자화의 어려움, GraphQL 미지원 등)
 

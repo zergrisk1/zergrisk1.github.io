@@ -9,8 +9,9 @@
 
 > [한국어로 보기](https://github.com/rundevelrun/gatsby-starter-rundevelrun/blob/develop/README-kr.md)
 
-
 ## 🎬 Introduction
+
+<img src="screen.png"/>
 
 Before using Gatsby, I managed a personal blog with Jetbrains' [Writerside↗](https://www.jetbrains.com/help/writerside/discover-writerside.html). While I was quite satisfied with the design elements, the tool, being primarily intended for document purposes, had many shortcomings for blog management (such as lack of RSS Feed support, difficulty in customization, and no GraphQL support).
 
