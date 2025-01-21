@@ -1,6 +1,6 @@
 ---
 emoji: "🚀"
-title: "2. How do we get started?"
+title: "How do we get started?"
 date: 2025-01-19 13:55:00
 update: 2025-01-19 13:55:00
 tags:
@@ -61,6 +61,9 @@ module.exports = {
    giscus: {
       ...
    },
+   adsense: {
+      ...
+   }
 }
 ```
 
@@ -72,7 +75,7 @@ module.exports = {
    ```yaml
    ---
    emoji: "🚀"
-   title: "2. How do we get started?"
+   title: "How do we get started?"
    date: 2025-01-19 13:53:00
    update: 2025-01-19 13:53:00
    tags:

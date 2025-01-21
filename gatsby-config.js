@@ -1,5 +1,5 @@
 const blogConfig = require("./blog-config")
-const { title, description, author, siteUrl } = blogConfig
+const { title, description, author, siteUrl,adsense } = blogConfig
 
 module.exports = {
   pathPrefix: "/gatsby-starter-hoodie",
@@ -24,6 +24,12 @@ module.exports = {
         },
         cleanupOnClient: true,
         windowKey: "__PRELOADED_STATE__",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `${adsense.client}`
       },
     },
     {
