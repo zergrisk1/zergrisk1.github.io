@@ -4,7 +4,7 @@ const { title, description, author, siteUrl,adsense } = blogConfig
 const adsenseClient = adsense == undefined ? "" : adsense.client;
 
 module.exports = {
-  pathPrefix: "/gatsby-starter-hoodie",
+  pathPrefix: "/gatsby-starter-rundevelrun",
   siteMetadata: {
     title,
     description,
