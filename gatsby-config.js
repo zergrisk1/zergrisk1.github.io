@@ -1,6 +1,8 @@
 const blogConfig = require("./blog-config")
 const { title, description, author, siteUrl,adsense } = blogConfig
 
+const adsenseClient = adsense == undefined ? "" : adsense.client;
+
 module.exports = {
   pathPrefix: "/gatsby-starter-hoodie",
   siteMetadata: {
@@ -29,7 +31,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-adsense`,
       options: {
-        publisherId: (adsense || adsense.client) ? "":`${adsense.client}` ,
+        publisherId: `${adsenseClient}` ,
       },
     },
     {
