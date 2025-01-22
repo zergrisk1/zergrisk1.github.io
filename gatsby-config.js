@@ -29,7 +29,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-adsense`,
       options: {
-        publisherId: `${adsense.client}`
+        publisherId: adsense.client ?`${adsense.client}` : "",
       },
     },
     {
