@@ -4,7 +4,7 @@ module.exports = {
   headerSubTitle: "<em style='color:#ed6c02'>YOUR</em>:BLOG:<em style='color:#ed6c02'>NAME</em>", // Logo 2
   copyright: "©YOUR:BLOG:NAME", // copyright in footer
   author: "YOUR:NAME",  // Your Name
-  siteUrl: "https://6developer.com/", // Your Site URL
+  siteUrl: "https://rundevelrun.netlify.app", // Your Site URL
   description: "Hi, Nice to meet you !",  // Blog description
   links: {
     github: "https://github.com/rundevelrun",
