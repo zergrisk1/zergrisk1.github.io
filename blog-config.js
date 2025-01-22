@@ -30,8 +30,8 @@ module.exports = {
     inputPosition: "bottom",
     lang: "en",
   },
-  // adsense: {
-  //   client: "ca-pub-XXXXXXXXXXXXXXXX",
-  //   slot: "XXXXXXXXXX"
-  // }
+  adsense: {
+    client: "ca-pub-2327476184552798",
+    slot: "XXXXXXXXXX"
+  }
 }
