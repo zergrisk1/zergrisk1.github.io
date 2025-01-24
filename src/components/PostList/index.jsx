@@ -30,6 +30,12 @@ const Date = styled.p`
   font-size: 14.4px;
   color: ${props => props.theme.colors.tertiaryText};
 `
+const SeriesName = styled.p`
+  font-size: 14.4px;
+  float: right;
+  color: ${props => props.theme.colors.text};
+  text-decoration-line: underline;  
+`
 
 const Excerpt = styled.p`
   margin-bottom: 32px;
@@ -89,6 +95,9 @@ const PostList = ({ postList }) => {
                 }
                 <Link to={slug}>{title}</Link>
               </Title>
+              <Link to={`/series/${_.replace(series, /\s/g, "-")}`}>
+                <SeriesName>{series}</SeriesName>
+              </Link>
               <Date>{date}</Date>
               <Excerpt>{excerpt}</Excerpt>
               <TagList tagList={tags} />
