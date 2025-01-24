@@ -82,7 +82,7 @@ const PostList = ({ postList }) => {
   return (
     <PostListWrapper>
       {postList.slice(0, postCount).map((post, i) => {
-        const { title, date, tags, emoji } = post.frontmatter
+        const { title, date, tags, emoji, series } = post.frontmatter
         const { excerpt } = post
         const { slug } = post.fields
         return (
