@@ -25,15 +25,11 @@ Thank you for making the source available.
 ## ✅ Key Features
 
 > - Adsense
->   - Insert ads at the top/bottom of the content, below the ToC, and between lists (Update. 2025-01-21)
->  <br/> <br/>
 > - SEO
->   - SEO optimization (Update. 2025-01-19)
-
-> <br/> <br/>
 > - Markdown
 > - Code highlighting
 > - Katex syntax
+> - Mermaid syntax
 > - Dark mode (integrated with OS settings)
 > - Tag classification
 > - Series classification
