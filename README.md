@@ -55,6 +55,14 @@ Contributions welcome! Feel free to submit PRs or open issues.
 
 ## ⭐ Star History
 
-![Star History Chart](https://api.star-history.com/svg?repos=rundevelrun/gatsby-starter-rundevelrun&type=Date)
+## Star History
+
+<a href="https://www.star-history.com/#rundevelrun/gatsby-starter-rundevelrun&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=rundevelrun/gatsby-starter-rundevelrun&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=rundevelrun/gatsby-starter-rundevelrun&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=rundevelrun/gatsby-starter-rundevelrun&type=Date" />
+ </picture>
+</a>
 
 If you find this useful, please consider starring the project ⭐️
