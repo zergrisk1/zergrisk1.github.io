@@ -11,15 +11,18 @@ contents/
       index.md
 ```
 
-## 📝 필수 Frontmatter
+## 📝 Frontmatter
 
 ```md
 ---
-title: "Hello World"
-date: "2025-04-01"
-description: "처음 작성하는 블로그 포스트"
-tags: ["gatsby", "starter"]
-thumbnail: "./thumbnail.jpg"
+emoji: "🚀"
+title: "어떻게 시작할까요?"
+date: 2025-01-18 13:55:00
+update: 2025-01-18 13:55:00
+tags:
+  - rundevelrun
+  - howto
+series: "Gatsby 블로그 시작하기"
 ---
 ```
 
@@ -29,7 +32,7 @@ Markdown 문법을 사용하여 본문을 작성하세요. 코드 블록, 이미
 
 예시:
 
-```md
+````md
 ## 서론
 
 이 블로그는 Gatsby와 Markdown을 기반으로 만들어졌습니다.
@@ -37,4 +40,4 @@ Markdown 문법을 사용하여 본문을 작성하세요. 코드 블록, 이미
 ```js
 console.log("Hello Gatsby!");
 ```
-```
+````

@@ -11,15 +11,18 @@ contents/
       index.md
 ```
 
-## 📝 Required Frontmatter
+## 📝 Frontmatter
 
 ```md
 ---
-title: "Hello World"
-date: "2025-04-01"
-description: "My first blog post"
-tags: ["gatsby", "starter"]
-thumbnail: "./thumbnail.jpg"
+emoji: "🚀"
+title: "How do we get started?"
+date: 2025-01-19 13:55:00
+update: 2025-01-19 13:55:00
+tags:
+   - rundevelrun
+   - howto
+series: "Getting Started with Gatsby Blog"
 ---
 ```
 
