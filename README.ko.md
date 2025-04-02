@@ -55,6 +55,6 @@ gatsby develop
 
 ## ⭐ Star 히스토리
 
-[![Star History Chart](https://api.star-history.com/svg?repos=rundevelrun/gatsby-starter-rundevelrun&type=Date)](https://star-history.com/#rundevelrun/gatsby-starter-rundevelrun&Date)
+![Star History Chart](https://api.star-history.com/svg?repos=rundevelrun/gatsby-starter-rundevelrun&type=Date)
 
 이 스타터가 도움이 되셨다면 Star로 응원해주세요! ⭐️
