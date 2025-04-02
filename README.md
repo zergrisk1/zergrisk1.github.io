@@ -13,8 +13,6 @@ A minimal, SEO-friendly Gatsby blog starter — perfect for developers who want 
 - 🧠 SEO optimized with meta tags and schema.org
 - 💻 Fully responsive, mobile-friendly
 - 🌙 Dark mode toggle
-- 🎨 Easily customizable styles with TailwindCSS
-- 🔍 Built-in search with Lunr.js
 
 ## 👀 Demo
 
