@@ -55,8 +55,6 @@ gatsby develop
 
 ## ⭐ Star 히스토리
 
-## Star History
-
 <a href="https://www.star-history.com/#rundevelrun/gatsby-starter-rundevelrun&Date">
  <picture>
    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=rundevelrun/gatsby-starter-rundevelrun&type=Date&theme=dark" />
